@@ -5,7 +5,7 @@ const Layout = () => {
   return (
     <div style={{display:"flex",gap:"20px"}}>
         <Link to="/">blog </Link>
-        <Link to="/home">Home </Link>
+        <Link to="/">Home </Link>
         <Outlet/>
     </div>
   )
