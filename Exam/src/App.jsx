@@ -8,10 +8,10 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout/>,
+      element: <Layout />,
       children: [
         {
-         path:"/home",
+          index: true,
           element: <Home />,
         },
         {
@@ -21,7 +21,7 @@ const App = () => {
       ],
     },
   ]);
-  return <RouterProvider router={router}></RouterProvider>
+  return <RouterProvider router={router}/>
 };
 
 export default App;
